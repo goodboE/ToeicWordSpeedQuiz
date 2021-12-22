@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WordQuiz</string>
+    <string name="title">TOEIC WORD\nSPEED\nQUIZ</string>
+    <string name="start">시작</string>
+    <string name="info">통계</string>
+    <string name="question">다음 단어의 뜻으로 알맞은 것은?</string>
+</resources>
