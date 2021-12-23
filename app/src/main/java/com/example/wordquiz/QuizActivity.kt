@@ -61,10 +61,15 @@ class QuizActivity : AppCompatActivity() {
         btnRadio2.text = wordViewModel.curNumber2
         btnRadio3.text = wordViewModel.curNumber3
         btnRadio4.text = wordViewModel.curNumber4
+
         btnRadio1.isChecked = false
+        btnRadio1.setBackgroundColor(Color.WHITE)
         btnRadio2.isChecked = false
+        btnRadio2.setBackgroundColor(Color.WHITE)
         btnRadio3.isChecked = false
+        btnRadio3.setBackgroundColor(Color.WHITE)
         btnRadio4.isChecked = false
+        btnRadio4.setBackgroundColor(Color.WHITE)
     }
 
     private fun checkAnswer(userAns: Int) {
@@ -93,7 +98,8 @@ class QuizActivity : AppCompatActivity() {
                 4 -> btnRadio4.setBackgroundColor(Color.GREEN)
             }
         }
-
+        wordViewModel.moveToNext()
+        updateWordQuiz()
 
     }
 }
